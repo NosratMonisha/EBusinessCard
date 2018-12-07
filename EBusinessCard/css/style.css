@@ -1,0 +1,148 @@
+﻿html{
+    height:100%;
+}
+
+body{
+    /*background-image: url("../images/pic3.jpeg");*/
+    /*object-fit: cover;*/
+    background: linear-gradient(45deg, #ffffcc,#ccccff);
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+#box{
+    display: flex;
+    align-items: center;
+    color: #fafafa;
+    flex-flow: column;
+}
+
+ #content{
+    height: 400px;
+    width: 350px;
+    /**background-color: #425262;**/
+    background-color: #394856;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#content1{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-size: 28px;
+    color: #fdfefb;
+    margin: 25px 0px;
+}
+
+#content2{
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    margin-bottom:  20px;
+}
+
+.lbl{
+    margin: 5px;
+    font-size: 17px;
+    font-family: Ubuntu;
+    font-weight: 500;
+}
+
+.txtbox{
+    margin: 5px 5px 15px 5px;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 0px;
+    font-size: 16px;
+    color: #808080;
+}
+
+input{
+    border: 0px;
+    background-color: #394856;
+    border-bottom:2px solid #576573;
+    font-family: Ubuntu;
+    font-weight: 400;
+}
+
+input:focus{
+    outline: none;
+    background-color: #394856;
+    color: #fafafa;
+}
+
+#content3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button{
+    height: 35px;
+    width: 305px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    outline:  none;
+    border: none;
+    background-color: #516577;
+    color:  #fafafa;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Ubuntu;
+    transition: all 0.33s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+.button:hover{
+    cursor:pointer;
+    background-color: #394856;
+}
+
+#content3 p{
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px;
+    padding: 0px;
+    color: #dcd6d6;
+}
+
+a{
+    color:#dcd6d6;
+    text-decoration:none;
+}
+
+a:hover{
+    color: #bbb8b8;
+    text-decoration:underline;
+}
+
+.error{
+    height: 60px;
+    width: 250px;
+    background-color: #ffecec;
+    border-radius:3px;
+    position:absolute;
+    top: 30px;
+    right: 50px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    color: #ff2222;
+    font-family: ubuntu;
+    font-size: 14px;
+    display:none;
+}

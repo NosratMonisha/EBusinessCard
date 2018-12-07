@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusinessCard", "EBusinessCard\EBusinessCard.csproj", "{928D70A0-42F5-4388-8C8E-A2C1CF317306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{29A83CC0-CCF0-4919-989C-4D05B91BC251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessAccessLayer", "BusinessAccessLayer\BusinessAccessLayer.csproj", "{D057F2E3-8CA2-429B-A5F7-785EC4AFF3BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{928D70A0-42F5-4388-8C8E-A2C1CF317306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928D70A0-42F5-4388-8C8E-A2C1CF317306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928D70A0-42F5-4388-8C8E-A2C1CF317306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928D70A0-42F5-4388-8C8E-A2C1CF317306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A83CC0-CCF0-4919-989C-4D05B91BC251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A83CC0-CCF0-4919-989C-4D05B91BC251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A83CC0-CCF0-4919-989C-4D05B91BC251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A83CC0-CCF0-4919-989C-4D05B91BC251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D057F2E3-8CA2-429B-A5F7-785EC4AFF3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D057F2E3-8CA2-429B-A5F7-785EC4AFF3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D057F2E3-8CA2-429B-A5F7-785EC4AFF3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D057F2E3-8CA2-429B-A5F7-785EC4AFF3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

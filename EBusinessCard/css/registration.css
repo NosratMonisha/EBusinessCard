@@ -1,0 +1,196 @@
+﻿
+
+body{
+    background-image: linear-gradient(45deg, #ffffcc,#ccccff);
+    background-repeat:  no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-position: 100%;
+} 
+
+#RegistrationForm{
+    height: 685px;
+    width: 700px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #2a2c3aeb;
+    color: #fffff0;
+    border-radius: 5px;
+}
+
+#form-header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #e5e0e0;
+    margin-bottom: 40px;
+    padding-top:40px;
+}
+
+#title{
+    margin:0px;
+}
+
+#description{
+    font-size: 15px;
+    color: #aaa;
+    margin: 15px 0px 0px 0px;
+}
+
+
+#form-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 385px;
+}
+
+#form-content-input{
+    display: inherit;
+    flex-direction: column;
+    margin: 15px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.content-input-tabs{
+    height:  30px;
+    margin-bottom: 25px;
+    margin-right:0px;
+    margin-left:0px;
+    display:flex;
+    flex-flow: row;
+    white-space: nowrap;
+}
+
+.input-left-tabs{
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    padding-right: 1%;
+}
+#org-name-label{
+      padding-right: 0%;
+}
+
+.input-field{
+    border: 0px;
+    margin-left: 24px;
+    padding: 5px 0px 5px 0px;
+    width: 250px;
+    background-color: transparent;
+    border-bottom: 2px solid #888;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 17px;
+    color: #888;
+}
+.input-field:focus{
+    outline: none;
+    color: #fafafa;
+    border-bottom: 2px solid #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+#Dob{
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#aaa;
+}
+#form-content-button{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+#form-footer{
+
+margin: 0px;
+
+padding: 0px;
+
+width: 100%;
+}
+
+#form-footer-top{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 500;
+}
+#top-left{
+    width:300px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 28px;
+    color: #fafafa;
+}
+
+#top-right{
+    width:400px ;
+    text-align: start;
+    margin-left: 25px;
+
+}
+#address-label{
+    padding: 10px;
+}
+textarea{
+    resize:  none;
+    height: 50px;
+    width: 250px;
+    padding: 5px 10px;
+    padding-bottom: 0px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #888;
+    outline: none;
+    box-sizing:  border-box;
+    font: normal 14px 'Montserrat', sans-serif;
+    border-radius: 2px;
+    margin-left: 15px;
+}
+
+#form-footer-bottom{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+textarea::placeholder{
+    color:#aaa;
+}
+
+#btnSubmit{
+    height: 40px;
+    width: 150px;
+    border-radius: 2px;
+    background:  transparent;
+    border: 2px solid #888;
+    color: #b7b7b7;
+    outline:  none;
+    font-size: 18px;
+    font-family: Ubuntu;
+    cursor:pointer;
+    transition:all 0.33s ease-in-out;
+    font-weight: 600;
+}
+
+#btnSubmit:hover{
+    background-color: #262c3a;
+    color: #fff;
+    border: 2px solid white;
+}
+
+.extra{
+    margin-top:10px;
+}

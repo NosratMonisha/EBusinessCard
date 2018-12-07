@@ -1,0 +1,48 @@
+﻿@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('../fonts/Montserrat-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
