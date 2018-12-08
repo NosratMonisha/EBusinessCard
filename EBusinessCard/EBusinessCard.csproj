@@ -165,7 +165,9 @@
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Redirect.aspx" />
     <Content Include="UI\registration.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Errors_UI\Error.aspx.cs">
