@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="EBusinessCard.AdminUI.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Panel</title>
+    <link href="../Images/admin.png" rel="shortcut icon" />
+    <link href="../css/font-style.css" rel="stylesheet" />
+    <link href="../css/AdminPanel.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <main>
+                <header>
+                    <div class="container">
+                        <div id="title">
+                            <h1>Admin Panel</h1>
+                            <asp:Label ID="lblAdminFullName" runat="server">Nasir Islam Sujan</asp:Label>
+                        </div>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="ListOfCards.aspx">List of Cards</a></li>
+                                <li><a href="#">Add Cards</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </main>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

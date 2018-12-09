@@ -1,0 +1,166 @@
+﻿body {
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    background: #22252b;
+}
+
+.container{
+    width: 350px;
+    margin:0px auto;
+    height: 415px;
+    margin-top:100px;
+    text-align:center;
+    box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.5);
+    background: #404040;
+    position:relative;
+}
+
+.top{
+    background: #656565;
+}
+
+.top h1{
+    margin:0px;
+    padding:7px;
+    color: #111;
+    font-family: calibri;
+}
+
+.relative{
+    position:relative;
+    left: 27px;
+    color:#fff;
+}
+
+.text-field{
+    height:40px;
+    margin-bottom: 30px;
+    width:210px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius:4px;
+    padding-left: 30px;
+    outline:none;
+    color:white;
+    font:bold 16px calibri;
+    transition:all 0.33s ease-in-out;
+}
+
+.first{
+    margin-top:60px;
+}
+
+.text-field:active, .text-field:focus{
+    border:1px solid #ccc;
+    box-shadow:0 0 0 3px rgba(234, 234, 234, 0.5);
+}
+
+p{
+    margin: -10px 55px 0px 0px;
+    text-align:right;
+    font:12px monospace;
+}
+
+p a{
+    text-decoration:none;
+    font-weight:bold;
+    outline:none;
+    color: #000;
+}
+
+p a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.btn-login{
+    height:40px;
+    width:40%;
+    margin-bottom:20px;
+    border-radius:4px;
+    border:1px solid #000;
+    background:#000;
+    outline:none;
+    font:bold 16px calibri;
+    color:white;
+    transition:all 0.33s ease-in-out;
+}
+
+.btn-login:hover{
+    cursor:pointer;
+    border:1px solid #ccc;
+}
+
+.btn-login:focus{
+    border:1px solid #ccc;
+    box-shadow:0 0 0 3px rgba(234, 234, 234, 0.5); 
+}
+
+.status-report{
+    color: #f25268;
+    font:bold 12px monospace;
+}
+
+.bottom{
+    margin-top:20px;
+    border-top: 1px solid #555;
+    padding:8px;
+}
+
+.redirect-to-reg{
+    font:14px consolas;
+    color: #000;
+}
+
+.redirect-to-reg a{
+    font-weight:bold;
+    text-decoration:none;
+    outline:none;
+    color: #000;
+}
+
+.redirect-to-reg a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.validation-summary{
+    position:absolute;
+    top:-80px;
+    right:-480px;
+    width:200px;
+    height:auto;
+    background:#ff9999;
+    font:bold 12px monospace;
+    text-align:left;
+    border-radius:3px;
+    box-shadow:0px 0px 5px rgba(245,78,34,0.4);
+}
+
+.alert-1{
+    position:absolute;
+    top:120px;
+    right:70px;
+    color:red;
+    font-weight:bold;
+    visibility:hidden;
+}
+
+.alert-2{
+    position:absolute;
+    top:195px;
+    right:70px;
+    color:red;
+    font-weight:bold;
+    visibility:hidden;
+}
+
+@media screen and (max-width:400px){
+    .container{
+        width:360px;
+    }
+    .text-field{
+        width:210px;
+    }
+}

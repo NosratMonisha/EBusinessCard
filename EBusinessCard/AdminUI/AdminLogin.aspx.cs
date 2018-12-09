@@ -17,42 +17,23 @@ namespace EBusinessCard.AdminUI
         }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string saltedHashedPassword = "";
-
-            if (saltedHashedPassword != null)
+            Admin admin = new Admin
             {
-                User user = new User
-                {
-                    UserName = txtUsername.Text,
-                    Password = txtPassword.Text
-                };
+                UserName = txtUsername.Text,
+                Password = txtPassword.Text
+            };
 
-                DataTable dt = user.Login();
+            DataTable dt = admin.Login();
 
-                if (dt.Rows.Count > 0)
-                {
-                    Session["User"] = dt.Rows[0]["Fullname"].ToString();
-                    Session["UserWholeRecord"] = dt;
-
-                    if (Session["AbsolutePage"] == null)
-                    {
-                        Response.Redirect("~/UI/HomePage.aspx");
-                    }
-                    else
-                    {
-                        Response.Redirect(Session["AbsolutePage"].ToString());
-                    }
-                }
-                else
-                {
-                    ResetForm();
-                    status.Text = "username and/or password not matched!";
-                }
+            if (dt.Rows.Count > 0)
+            {
+                Session["AdminFullName"] = dt.Rows[0]["Fullname"].ToString();
+                Response.Redirect("~/AdminUI/AdminPanel.aspx");
             }
             else
             {
                 ResetForm();
-                status.Text = "username and/or password not matched!";
+                status.Text = "Username and/or password not matched!";
             }
         }
 
