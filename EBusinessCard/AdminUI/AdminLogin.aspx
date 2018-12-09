@@ -1,4 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="EBusinessCard.AdminUI.AdminLogin" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -50,8 +52,7 @@
         </form>
     </div>
 
-    <!-- scripts-->
-    <%--<script src="../script/loginValidation.js" type="text/javascript"></script>--%>
+
     <script src="../Untracked/jQuery3.3.1.min.js"></script>
     <script src="../Untracked/fontawesome-all.min.js"></script>
 </body>

@@ -94,8 +94,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminUI\AdminLogin.aspx" />
+    <Content Include="css\master.css" />
     <Content Include="Errors_UI\Error.aspx" />
     <Content Include="Errors_UI\PageNotFoundError.aspx" />
+    <Content Include="Images\bcp-1.jpg" />
+    <Content Include="Images\bcp-2.jpg" />
+    <Content Include="Images\bcp-3.jpg" />
+    <Content Include="Images\bcp-4.jpg" />
+    <Content Include="Images\bcp-5.jpg" />
+    <Content Include="Images\painting-palette.png" />
+    <Content Include="LocalCDN\font-awesome.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -149,6 +158,9 @@
     <Content Include="fonts\Ubuntu-Medium.ttf" />
     <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="UI\HomePage.aspx" />
+    <Content Include="UI\IndexMaster.Master" />
+    <Content Include="fonts\FrederickatheGreat-Regular.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -165,11 +177,27 @@
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Redirect.aspx" />
     <Content Include="UI\registration.aspx" />
+    <Content Include="Untracked\ace.js" />
+    <Content Include="Untracked\bootstrap.min.css" />
+    <Content Include="Untracked\bootstrap.min.js" />
+    <Content Include="Untracked\fontawesome-all.min.css" />
+    <Content Include="Untracked\fontawesome-all.min.js" />
+    <Content Include="Untracked\github.css" />
+    <Content Include="Untracked\intellicense.js" />
+    <Content Include="Untracked\jQuery-3.2.1.js" />
+    <Content Include="Untracked\jQuery3.3.1.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminUI\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUI\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Errors_UI\Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -186,6 +214,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IndexMaster.Master.cs">
+      <DependentUpon>IndexMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\IndexMaster.Master.designer.cs">
+      <DependentUpon>IndexMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="UI\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -212,8 +254,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="BusinessAccessLayer\" />
-    <Folder Include="DataAccesslayer\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessAccessLayer\BusinessAccessLayer.csproj">

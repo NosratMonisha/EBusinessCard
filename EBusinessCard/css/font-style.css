@@ -46,3 +46,8 @@
     font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'FrederickatheGreat-Regular';
+    src: url('../fonts/FrederickatheGreat-Regular.ttf') format('truetype');
+}
