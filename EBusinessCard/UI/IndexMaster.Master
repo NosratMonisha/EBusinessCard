@@ -18,12 +18,17 @@
                         <div id="content-header-logo">EBCard</div>
                     </div>
                     <div id="content-header-right">
-                        <ul id="header-button">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sample cards</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="Login.aspx">Login</a></li>
+                        <ul id="headerUL" runat="server">
+                            <li><a href="HomePage.aspx">Home</a></li>
+                            <li><a href="CardTemplates.aspx">Sample cards</a></li>
+                            <li><a href="About.aspx">About</a></li>
+                            <li id="loginLi" runat="server"><a href="Login.aspx">Login</a></li>
+                            <asp:Button Text="LOGOUT" CssClass="btnLogout" runat="server" ID="btnLogOut" OnClick="btnLogOut_Click"/>
                         </ul>
+                    </div>
+                    <div id="userImageContainer" runat="server">
+                        <img id="userImage" src="../Images/user.png" />
+                        <asp:Label ID="lblUserName" runat="server"></asp:Label>
                     </div>
                 </div>
             </div>

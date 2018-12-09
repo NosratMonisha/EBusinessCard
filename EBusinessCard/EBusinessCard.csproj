@@ -104,6 +104,7 @@
     <Content Include="Images\bcp-4.jpg" />
     <Content Include="Images\bcp-5.jpg" />
     <Content Include="Images\painting-palette.png" />
+    <Content Include="Images\user.png" />
     <Content Include="LocalCDN\font-awesome.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -158,6 +159,8 @@
     <Content Include="fonts\Ubuntu-Medium.ttf" />
     <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="UI\About.aspx" />
+    <Content Include="UI\CardTemplates.aspx" />
     <Content Include="UI\HomePage.aspx" />
     <Content Include="UI\IndexMaster.Master" />
     <Content Include="fonts\FrederickatheGreat-Regular.ttf" />
@@ -214,6 +217,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="UI\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CardTemplates.aspx.cs">
+      <DependentUpon>CardTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CardTemplates.aspx.designer.cs">
+      <DependentUpon>CardTemplates.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
