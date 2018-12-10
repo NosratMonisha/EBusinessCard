@@ -8,22 +8,74 @@
     <link href="../Images/admin.png" rel="shortcut icon" />
     <link href="../css/font-style.css" rel="stylesheet" />
     <link href="../css/AdminPanel.css" rel="stylesheet" />
+    <script src="../scripts/jQuery-3.2.1.js"></script>
+    <script src="../scripts/Cards.js"></script>
+
+    <script>
+
+        function ffd() {
+            var actualCard = document.getElementById("ContentPlaceHolder1_ActualCard");
+            var cardHolder = document.getElementById("ContentPlaceHolder1_cardHolder");
+            var cardHead = document.getElementById("ContentPlaceHolder1_cardHead");
+            var workArea = document.getElementById("ContentPlaceHolder1_workArea");
+            var cardBody = document.getElementById("ContentPlaceHolder1_cardBody");
+            var cardFooter = document.getElementById("ContentPlaceHolder1_cardFooter");
+            
+            var actualCardStyle = getComputedStyle(actualCard);
+            var cardHolderStyle = getComputedStyle(cardHolder);
+            var cardHeadStyle = getComputedStyle(cardHead);
+            var workAreaStyle = getComputedStyle(workArea);
+            var cardBodyStyle = getComputedStyle(cardBody);
+            var cardFooterStyle = getComputedStyle(cardFooter);
+
+            var CssProp = {
+                "CardsName": actualCard.innerText,
+                "ActualCardBG": actualCardStyle.backgroundColor,
+                "ActualCardTextColor": actualCardStyle.color,
+                "CardsFontFamily": actualCardStyle.fontFamily,
+                "CardHolderDisplay": cardHolderStyle.display,
+                "CardHolderPadding": cardHolderStyle.padding,
+                "CardHeadBG": cardHeadStyle.backgroundColor,
+                "CardHeadPadding": cardHeadStyle.padding,
+                "WorkAreaDisplay": workAreaStyle.display,
+                "CardBodyDisplay": cardBodyStyle.display,
+                "CardFooterTextAlign": cardFooterStyle.textAlign,
+                "CardFooterBorderTop": cardFooterStyle.borderTop,
+                "CardFooterPaddingTop": cardFooterStyle.paddingTop
+            };
+
+            $.ajax({
+                url: "AddOrModifyCards.aspx/AddNewCard",
+                method: "post",
+                contentType: "application/json",
+                data: '{CssProperty:'+ JSON.stringify(CssProp) +'}',
+                success: function (data) {
+                    console.log("Success");
+                }, error: function (data) {
+                    console.log(data);
+                }
+            });
+        }
+    </script>
+
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm1" runat="server"></asp:ScriptManager>
         <div>
             <main>
                 <header>
                     <div class="container">
                         <div id="title">
                             <h1>Admin Panel</h1>
-                            <asp:Label ID="lblAdminFullName" runat="server">Nasir Islam Sujan</asp:Label>
+                            <asp:Label ID="lblAdminFullName" runat="server">Nosrat</asp:Label>
                         </div>
                         <div id="menu">
                             <ul>
                                 <li><a href="ListOfCards.aspx">List of Cards</a></li>
-                                <li><a href="#">Add Cards</a></li>
-                                <li><a href="#">Logout</a></li>
+                                <li><a href="#">Add or Modify Cards</a></li>
+                                <li>
+                                    <asp:Button ID="btnLogout" runat="server" Text="LOGOUT" OnClick="btnLogout_Click" /></li>
                             </ul>
                         </div>
                     </div>
