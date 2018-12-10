@@ -95,15 +95,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminUI\AdminLogin.aspx" />
+    <Content Include="AdminUI\ListOfCards.aspx" />
+    <Content Include="css\AdminLogin.css" />
+    <Content Include="css\AdminPanel.css" />
     <Content Include="css\master.css" />
     <Content Include="Errors_UI\Error.aspx" />
     <Content Include="Errors_UI\PageNotFoundError.aspx" />
+    <Content Include="Images\admin.png" />
     <Content Include="Images\bcp-1.jpg" />
     <Content Include="Images\bcp-2.jpg" />
     <Content Include="Images\bcp-3.jpg" />
     <Content Include="Images\bcp-4.jpg" />
     <Content Include="Images\bcp-5.jpg" />
     <Content Include="Images\painting-palette.png" />
+    <Content Include="Images\user.png" />
     <Content Include="LocalCDN\font-awesome.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -158,9 +163,12 @@
     <Content Include="fonts\Ubuntu-Medium.ttf" />
     <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="UI\About.aspx" />
+    <Content Include="UI\CardTemplates.aspx" />
     <Content Include="UI\HomePage.aspx" />
     <Content Include="UI\IndexMaster.Master" />
     <Content Include="fonts\FrederickatheGreat-Regular.ttf" />
+    <Content Include="AdminUI\AdminMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -198,6 +206,20 @@
     <Compile Include="AdminUI\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminUI\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUI\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUI\ListOfCards.aspx.cs">
+      <DependentUpon>ListOfCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUI\ListOfCards.aspx.designer.cs">
+      <DependentUpon>ListOfCards.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Errors_UI\Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +236,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="UI\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CardTemplates.aspx.cs">
+      <DependentUpon>CardTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CardTemplates.aspx.designer.cs">
+      <DependentUpon>CardTemplates.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>

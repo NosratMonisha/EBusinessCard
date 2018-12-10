@@ -1,23 +1,21 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="EBusinessCard.AdminUI.AdminLogin" %>
 
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login</title>
     <meta charset="utf-8" />
 
     <link href="../Untracked/fontawesome-all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="~/css/userlogin.css" />
-
+    <link href="../css/font-style.css" rel="stylesheet" />
+    <link href="../css/AdminLogin.css" rel="stylesheet" />
 </head>
 <body>
 
     <div class="container">
         <!-- Login text header -->
         <div class="top">
-            <h1 class="title">Login</h1>
+            <h1 class="title">Admin Login</h1>
         </div>
 
         <form id="form1" runat="server">
@@ -41,9 +39,6 @@
             <br />
             <asp:Label ID="status" runat="server" CssClass="status-report"></asp:Label>
             <br />
-            <div class="bottom">
-                <asp:Label ID="redirectToReg" CssClass="redirect-to-reg" runat="server">Don't have an account? <a href="Registration.aspx">click here</a></asp:Label>
-            </div>
 
             <!-- Validation summary control -->
             <div class="validation-summary">

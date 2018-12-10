@@ -12,6 +12,7 @@ namespace BusinessAccessLayer
     public class BusinessAccess
     {
         public User UserObj { get; set; }
+        public Admin AdminObj { get; set; }
 
         public void AddNewUser()
         {
@@ -33,6 +34,16 @@ namespace BusinessAccessLayer
             parameters[0] = DataAccess.AddParameter("@username", UserObj.UserName);
             parameters[1] = DataAccess.AddParameter("@password", UserObj.Password);
             DataTable dt = DataAccess.ExecuteDTByProcedure("SELECT_USER_BY_USERNAME_N_PASSWORD", parameters);
+
+            return dt == null ? new DataTable() : dt;
+        }
+
+        public DataTable SelectAdmin()
+        {
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = DataAccess.AddParameter("@username", AdminObj.UserName);
+            parameters[1] = DataAccess.AddParameter("@password", AdminObj.Password);
+            DataTable dt = DataAccess.ExecuteDTByProcedure("SELECT_ADMIN_BY_USERNAME_N_PASSWORD", parameters);
 
             return dt == null ? new DataTable() : dt;
         }

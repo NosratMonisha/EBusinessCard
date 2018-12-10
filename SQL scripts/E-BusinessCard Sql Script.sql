@@ -14,13 +14,13 @@ CREATE TABLE [USER]
 	DOB					DATETIME	 NOT NULL
 )
 
-CREATE PROC SELECT_USER_BY_USERNAME_N_PASSWORD
+ALTER PROC SELECT_USER_BY_USERNAME_N_PASSWORD
 @username	VARCHAR(50),
 @password	VARCHAR(50)
 AS
 BEGIN
 	SELECT
-		[UserID]
+		Username
 	FROM 
 		[User]
 	WHERE
@@ -45,3 +45,28 @@ END
 
 
 SELECT * FROM [User]
+
+CREATE TABLE [Admin]
+(
+	AdminID			INT PRIMARY KEY IDENTITY,
+	Username		VARCHAR(50) NOT NULL,
+	Fullname		VARCHAR(50) NOT NULL,
+	[Password]		VARCHAR(50) NOT NULL
+)
+
+CREATE PROC SELECT_ADMIN_BY_USERNAME_N_PASSWORD
+@username		VARCHAR(50),
+@password		VARCHAR(50)
+AS
+BEGIN
+	SELECT 
+		Fullname
+	FROM 
+		[Admin]
+	WHERE 
+		Username = @username AND [Password] = @password
+END
+
+INSERT INTO [Admin] VALUES('Monisha','Nosrat Monisha','12345')
+
+SELECT * FROM [Admin]

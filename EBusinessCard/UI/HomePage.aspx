@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/UI/IndexMaster.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="EBusinessCard.UI.HomePage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cp1" runat="server">
-    <div id="body-content">
+    <div class="body-content">
         <div class="container" style="flex-direction: column;">
             <div id="body-content-header">
                 <div id="branding">
@@ -12,11 +12,11 @@
                 <ul>
                     <li  style="background-image: linear-gradient(to left, #b8a1ec, #fbc2eb);">
                         <h5 class="body-content-header-list">Step-1</h5>
-                        <p class="body-content-header-list-para">Choose your template</p>
+                        <p class="body-content-header-list-para">Choose template</p>
                     </li>
                     <li style="background-image: linear-gradient(to left, #FBC2EB, #BDD3F8);">
                         <h5 class="body-content-header-list">Step-2</h5>
-                        <p class="body-content-header-list-para">Edit selected template</p>
+                        <p class="body-content-header-list-para">Edit template</p>
                     </li>
                     <li style="background-image: linear-gradient(to left, #afe1ff, #ffbec4);">
                         <h5 class="body-content-header-list">Step-3</h5>

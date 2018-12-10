@@ -26,19 +26,14 @@ namespace EBusinessCard
                 Password = txtPassword.Value
             };
 
-            BusinessAccess BA = new BusinessAccess
-            {
-                UserObj = newUser
-            };
-
-            dt = BA.SelectUser();
+            dt = newUser.Login();
 
             if (dt.Rows.Count > 0)
             {
                 ResetForm();
-                Session["RedirectPageMessage"] = "Sucessfully Logged In !";
 
-                Response.Redirect("~/UI/Redirect.aspx");
+                Session["Username"] = dt.Rows[0]["Username"].ToString();
+                Response.Redirect("~/UI/HomePage.aspx");
             }else
             {
                 ResetForm();

@@ -30,12 +30,7 @@ namespace EBusinessCard.UI
                 FullName = txtFullName.Value
             };
 
-            BA = new BusinessAccess
-            {
-                UserObj = userObj
-            };
-
-            BA.AddNewUser();
+            userObj.Registration();
 
             ResetForm();
 
