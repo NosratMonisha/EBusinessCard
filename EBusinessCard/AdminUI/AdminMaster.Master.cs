@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BusinessAccessLayer;
 
 namespace EBusinessCard.AdminUI
 {
@@ -11,7 +12,13 @@ namespace EBusinessCard.AdminUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("~/AdminUI/AdminLogin.aspx");
         }
     }
 }

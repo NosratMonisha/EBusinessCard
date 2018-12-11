@@ -28,7 +28,7 @@ namespace EBusinessCard.AdminUI
             if (dt.Rows.Count > 0)
             {
                 Session["AdminFullName"] = dt.Rows[0]["Fullname"].ToString();
-                Response.Redirect("~/AdminUI/AdminPanel.aspx");
+                Response.Redirect("~/AdminUI/ListOfCards.aspx");
             }
             else
             {

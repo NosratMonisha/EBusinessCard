@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div id="locContent">
-            <h1 id="loc">List Of Cards</h1>
+        <div class="childContent">
+            <h1 class="child-h1">List Of Cards</h1>
         </div>
     </div>
 </asp:Content>

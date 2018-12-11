@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminUI\AddOrModifyCards.aspx" />
     <Content Include="AdminUI\AdminLogin.aspx" />
     <Content Include="AdminUI\ListOfCards.aspx" />
     <Content Include="css\AdminLogin.css" />
@@ -163,6 +164,8 @@
     <Content Include="fonts\Ubuntu-Medium.ttf" />
     <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="scripts\Cards.js" />
+    <Content Include="scripts\jQuery-3.2.1.js" />
     <Content Include="UI\About.aspx" />
     <Content Include="UI\CardTemplates.aspx" />
     <Content Include="UI\HomePage.aspx" />
@@ -199,6 +202,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminUI\AddOrModifyCards.aspx.cs">
+      <DependentUpon>AddOrModifyCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUI\AddOrModifyCards.aspx.designer.cs">
+      <DependentUpon>AddOrModifyCards.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminUI\AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
