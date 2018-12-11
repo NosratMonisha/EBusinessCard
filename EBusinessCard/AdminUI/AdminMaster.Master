@@ -74,7 +74,7 @@
                         <div id="menu">
                             <ul>
                                 <li><a href="ListOfCards.aspx">List of Cards</a></li>
-                                <li><a href="#">Add or Modify Cards</a></li>
+                                <li><a href="AddOrModifyCards.aspx">Add or Modify Cards</a></li>
                                 <li>
                                     <asp:Button ID="btnLogout" runat="server" Text="LOGOUT" OnClick="btnLogout_Click" /></li>
                             </ul>
