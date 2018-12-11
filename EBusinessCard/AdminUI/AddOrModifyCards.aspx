@@ -24,7 +24,7 @@
                         <div id="CardProp" runat="server" class="card-prop">
                             <div class="content-flex">
                                 <p>Enter Cards Name</p>
-                                <asp:TextBox ID="txtCardName" runat="server" placeholder="Enter cards name" CssClass="txt-card-name" required></asp:TextBox>
+                                <asp:TextBox ID="txtCardName" runat="server" placeholder="Enter cards name" CssClass="txt-card-name" CausesValidation="true" required></asp:TextBox>
                             </div>
                             <div class="content-flex">
                                 <p>Select theme</p>
@@ -58,6 +58,7 @@
 
                             <div class="btn-section">
                                 <asp:Button ID="btnSaveCards" runat="server" Text="Save Card" CssClass="btn-save-card" OnClientClick="ffd()"/>
+                                <asp:Button ID="btnClearAll" runat="server" Text="Clear All" CssClass="btn-save-card" OnClick="btnClearAll_Click" />
                             </div>
                         </div>
 
@@ -97,6 +98,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="status" id="status" runat="server">
+                        <h1 id="statusH1" runat="server">Successfully Saved new Cards !</h1>
                     </div>
                 </div>
             </div>

@@ -70,3 +70,57 @@ END
 INSERT INTO [Admin] VALUES('Monisha','Nosrat Monisha','12345')
 
 SELECT * FROM [Admin]
+
+
+CREATE TABLE CARDS
+(
+	CardID					INT PRIMARY KEY IDENTITY,
+	CardsName				VARCHAR(100) NOT NULL,
+	ActualCardBG			VARCHAR(200) NOT NULL,
+	ActualCardTextColor		VARCHAR(200) NOT NULL,
+	CardsFontFamily			VARCHAR(200) NOT NULL,
+	CardHolderDisplay		VARCHAR(200) NOT NULL,
+	CardHolderPadding		VARCHAR(200) NOT NULL,
+	CardHeadBG				VARCHAR(200) NOT NULL,
+	CardHeadPadding			VARCHAR(200) NOT NULL,
+	WorkAreaDisplay			VARCHAR(200) NOT NULL,
+	CardBodyDisplay			VARCHAR(200) NOT NULL,
+	CardFooterTextAlign		VARCHAR(200) NOT NULL,
+	CardFooterBorderTop		VARCHAR(200) NOT NULL,
+	CardFooterPaddingTop	VARCHAR(200) NOT NULL
+)
+
+CREATE PROC ADD_NEW_CARDS
+@cardsName				VARCHAR(100),
+@actualCardBG			VARCHAR(200),
+@actualCardTextColor	VARCHAR(200),
+@cardsFontFamily		VARCHAR(200),
+@cardHolderDisplay		VARCHAR(200),
+@cardHolderPadding		VARCHAR(200),
+@cardHeadBG				VARCHAR(200),
+@cardHeadPadding		VARCHAR(200),
+@workAreaDisplay		VARCHAR(200),
+@cardBodyDisplay		VARCHAR(200),
+@cardFooterTextAlign	VARCHAR(200),
+@cardFooterBorderTop	VARCHAR(200),
+@cardFooterPaddingTop	VARCHAR(200)
+AS
+BEGIN
+	INSERT INTO CARDS VALUES
+	(@cardsName, @actualCardBG, @actualCardTextColor, @cardsFontFamily, @cardHolderDisplay, @cardHolderPadding, @cardHeadBG,
+	 @cardHeadPadding, @workAreaDisplay, @cardBodyDisplay, @cardFooterTextAlign, @cardFooterBorderTop, @cardFooterPaddingTop)
+END
+
+SELECT * FROM CARDS
+
+delete from Cards
+
+CREATE PROC SELECT_ALL_CARD_IDs
+AS
+BEGIN
+	SELECT
+		CardID, CardsName
+	FROM 
+		Cards
+END
+

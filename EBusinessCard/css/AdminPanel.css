@@ -98,7 +98,6 @@ header{
     display:flex;
     flex-direction: column;
     height: 420px;
-    border-right: 2px dashed;
 }
 
 .ddl-options, .btn-save-card{
@@ -142,7 +141,6 @@ header{
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-top: 10px;
 }
 
 .actual-card{
@@ -235,13 +233,14 @@ h1, h2, h3, h4, h5, h6, .cardHolder p{
 
 .btn-save-card{
     height:40px;
-    width:150px;
+    width: 120px;
     background:white;
     border:1px solid #dedede;
     border-radius:3px;
     cursor:pointer;
     transition:all 0.33s ease-in-out;
     outline:none;
+    margin: 0 10px;
 }
 
 .btn-save-card:hover{
@@ -260,4 +259,16 @@ h1, h2, h3, h4, h5, h6, .cardHolder p{
     outline: none;
     font-family: ubuntu;
     font-weight: 600;
+}
+
+.status{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    color:#4caf50;
+    display:none;
+}
+
+.required{
+    color:red;
 }

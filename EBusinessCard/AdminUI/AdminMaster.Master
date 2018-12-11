@@ -20,6 +20,7 @@
             var workArea = document.getElementById("ContentPlaceHolder1_workArea");
             var cardBody = document.getElementById("ContentPlaceHolder1_cardBody");
             var cardFooter = document.getElementById("ContentPlaceHolder1_cardFooter");
+            var cardName = document.getElementById("ContentPlaceHolder1_txtCardName");
             
             var actualCardStyle = getComputedStyle(actualCard);
             var cardHolderStyle = getComputedStyle(cardHolder);
@@ -29,7 +30,7 @@
             var cardFooterStyle = getComputedStyle(cardFooter);
 
             var CssProp = {
-                "CardsName": actualCard.innerText,
+                "CardsName": cardName.value,
                 "ActualCardBG": actualCardStyle.backgroundColor,
                 "ActualCardTextColor": actualCardStyle.color,
                 "CardsFontFamily": actualCardStyle.fontFamily,
@@ -50,11 +51,11 @@
                 contentType: "application/json",
                 data: '{CssProperty:'+ JSON.stringify(CssProp) +'}',
                 success: function (data) {
-                    console.log("Success");
                 }, error: function (data) {
                     console.log(data);
                 }
             });
+
         }
     </script>
 
