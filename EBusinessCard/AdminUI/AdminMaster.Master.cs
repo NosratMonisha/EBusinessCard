@@ -12,7 +12,16 @@ namespace EBusinessCard.AdminUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {
+                if (Session["AdminFullName"] != null)
+                {
+                    lblAdminFullName.Text = Session["AdminFullName"].ToString();
+                }else
+                {
+                    Response.Redirect("~/AdminUI/AdminLogin.aspx");
+                }
+            }
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
