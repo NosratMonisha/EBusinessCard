@@ -8,6 +8,7 @@
     <link href="../Images/admin.png" rel="shortcut icon" />
     <link href="../css/font-style.css" rel="stylesheet" />
     <link href="../css/AdminPanel.css" rel="stylesheet" />
+    <link href="../css/listofcard.css" rel="stylesheet" />
     <script src="../scripts/jQuery-3.2.1.js"></script>
     <script src="../scripts/Cards.js"></script>
 

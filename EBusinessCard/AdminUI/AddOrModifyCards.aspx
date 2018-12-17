@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminUI/AdminMaster.Master" AutoEventWireup="true" CodeBehind="AddOrModifyCards.aspx.cs" Inherits="EBusinessCard.AdminUI.AddOrModifyCards" %>
+﻿<%@ Page Title="Admin Panel | Add or Modify Card" Language="C#" MasterPageFile="~/AdminUI/AdminMaster.Master" AutoEventWireup="true" CodeBehind="AddOrModifyCards.aspx.cs" Inherits="EBusinessCard.AdminUI.AddOrModifyCards" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:UpdatePanel ID="up1" runat="server">

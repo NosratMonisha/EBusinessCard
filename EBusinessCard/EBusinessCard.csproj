@@ -99,6 +99,7 @@
     <Content Include="AdminUI\ListOfCards.aspx" />
     <Content Include="css\AdminLogin.css" />
     <Content Include="css\AdminPanel.css" />
+    <Content Include="css\listofcard.css" />
     <Content Include="css\master.css" />
     <Content Include="Errors_UI\Error.aspx" />
     <Content Include="Errors_UI\PageNotFoundError.aspx" />

@@ -22,6 +22,7 @@ namespace EBusinessCard.UI
             User userObj = new User
             {
                 UserName = txtUsername.Value,
+                UserType = ddlUserType.SelectedItem.ToString(),
                 Password = txtPassword.Value,
                 Email = txtEmail.Value,
                 DOB = txtDOB.Value,

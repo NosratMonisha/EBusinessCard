@@ -194,3 +194,16 @@ textarea::placeholder{
 .extra{
     margin-top:10px;
 }
+
+.user-type-ddl{
+    height: 35px;
+    width: 250px;
+    background: #383a48;
+    color: white;
+    outline: none;
+    border: 2px solid #888;
+    border-radius: 2px;
+    margin-left: 25px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}

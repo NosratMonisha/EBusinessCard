@@ -16,14 +16,15 @@ namespace BusinessAccessLayer
         public Cards CardsObj { get; set; }
         public void AddNewUser()
         {
-            SqlParameter[] parameters = new SqlParameter[7];
+            SqlParameter[] parameters = new SqlParameter[8];
             parameters[0] = DataAccess.AddParameter("@username", UserObj.UserName);
-            parameters[1] = DataAccess.AddParameter("@fullname", UserObj.FullName);
-            parameters[2] = DataAccess.AddParameter("@password", UserObj.Password);
-            parameters[3] = DataAccess.AddParameter("@email", UserObj.Email);
-            parameters[4] = DataAccess.AddParameter("@address", UserObj.Address);
-            parameters[5] = DataAccess.AddParameter("@dob", UserObj.DOB);
-            parameters[6] = DataAccess.AddParameter("@phonenumber", UserObj.PhoneNumber);
+            parameters[1] = DataAccess.AddParameter("@userType", UserObj.UserType);
+            parameters[2] = DataAccess.AddParameter("@fullname", UserObj.FullName);
+            parameters[3] = DataAccess.AddParameter("@password", UserObj.Password);
+            parameters[4] = DataAccess.AddParameter("@email", UserObj.Email);
+            parameters[5] = DataAccess.AddParameter("@address", UserObj.Address);
+            parameters[6] = DataAccess.AddParameter("@dob", UserObj.DOB);
+            parameters[7] = DataAccess.AddParameter("@phonenumber", UserObj.PhoneNumber);
 
             DataAccess.ExecuteDTByProcedure("ADD_NEW_USER", parameters);
         }
@@ -115,6 +116,13 @@ namespace BusinessAccessLayer
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = DataAccess.AddParameter("@cardId", cardID);
             DataTable dt = DataAccess.ExecuteDTByProcedure("DELETE_CARD_BY_ID", parameters);
+
+            return dt == null ? new DataTable() : dt;
+        }
+
+        public DataTable SelectCardForRepeater()
+        {
+            DataTable dt = DataAccess.ExecuteDTByProcedure("SELECT_CARDS_FOR_REPEATER", null);
 
             return dt == null ? new DataTable() : dt;
         }
