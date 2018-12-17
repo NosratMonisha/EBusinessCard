@@ -12,7 +12,7 @@ CREATE TABLE [USER]
 	Email				VARCHAR(200) NOT NULL,
 	PhoneNumber			VARCHAR(15)  NOT NULL,
 	[Address]			VARCHAR(MAX) NOT NULL,
-	DOB					DATETIME	 NOT NULL
+	DOB					VARCHAR(100) NOT NULL
 )
 
 DROP TABLE [User]
@@ -37,7 +37,7 @@ ALTER PROC ADD_NEW_USER
 @password		VARCHAR(50),
 @email			VARCHAR(200),
 @address		VARCHAR(MAX),
-@dob			DATETIME,
+@dob			VARCHAR(50),
 @phonenumber	VARCHAR(15)
 AS
 BEGIN
