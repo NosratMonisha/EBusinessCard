@@ -14,13 +14,13 @@ namespace EBusinessCard.AdminUI
         {
             if (!IsPostBack)
             {
-                if (Session["AdminFullName"] != null)
-                {
-                    lblAdminFullName.Text = Session["AdminFullName"].ToString();
-                }else
-                {
-                    Response.Redirect("~/AdminUI/AdminLogin.aspx");
-                }
+                //if (Session["AdminFullName"] != null)
+                //{
+                //    lblAdminFullName.Text = Session["AdminFullName"].ToString();
+                //}else
+                //{
+                //    Response.Redirect("~/AdminUI/AdminLogin.aspx");
+                //}
             }
         }
 

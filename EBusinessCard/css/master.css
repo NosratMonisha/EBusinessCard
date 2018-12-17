@@ -94,6 +94,7 @@ ul{
     font-size: 12px;
     font-weight: 600;
     display: block;
+    outline:none;
     padding: 23px 15px;
     transition:all 0.33s ease-in-out;
 }

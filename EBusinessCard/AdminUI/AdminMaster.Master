@@ -21,16 +21,25 @@
             var cardBody = document.getElementById("ContentPlaceHolder1_cardBody");
             var cardFooter = document.getElementById("ContentPlaceHolder1_cardFooter");
             var cardName = document.getElementById("ContentPlaceHolder1_txtCardName");
-            
+            var themeName = document.getElementById("ContentPlaceHolder1_ddlTheme");
+            var button = document.getElementById("ContentPlaceHolder1_btnSaveCards");
+
             var actualCardStyle = getComputedStyle(actualCard);
             var cardHolderStyle = getComputedStyle(cardHolder);
             var cardHeadStyle = getComputedStyle(cardHead);
             var workAreaStyle = getComputedStyle(workArea);
             var cardBodyStyle = getComputedStyle(cardBody);
             var cardFooterStyle = getComputedStyle(cardFooter);
+            var themeIndex = $(themeName).prop('selectedIndex');
+            var buttonText = $(button).prop('value');
+
+            var CardID = $('#ContentPlaceHolder1_ddlCardID option:selected').val();
 
             var CssProp = {
+                "ButtonText": buttonText,
+                "CardID" : CardID,
                 "CardsName": cardName.value,
+                "ThemeIndex": themeIndex,
                 "ActualCardBG": actualCardStyle.backgroundColor,
                 "ActualCardTextColor": actualCardStyle.color,
                 "CardsFontFamily": actualCardStyle.fontFamily,

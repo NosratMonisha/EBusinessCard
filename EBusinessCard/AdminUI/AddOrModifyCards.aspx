@@ -16,13 +16,13 @@
                             </asp:DropDownList>
                         </div>
                         <div class="content-flex hidden" id="CardId" runat="server">
-                            <p>Choose Cards ID</p>
-                            <asp:DropDownList ID="ddlCardID" runat="server" CssClass="ddl-options">
+                            <p>Choose Card</p>
+                            <asp:DropDownList ID="ddlCardID" runat="server" CssClass="ddl-options" OnSelectedIndexChanged="ddlCardID_SelectedIndexChanged" AutoPostBack="true">
                             </asp:DropDownList>
                         </div>
 
                         <div id="CardProp" runat="server" class="card-prop">
-                            <div class="content-flex">
+                            <div class="content-flex" id="nameContainer" runat="server">
                                 <p>Enter Cards Name</p>
                                 <asp:TextBox ID="txtCardName" runat="server" placeholder="Enter cards name" CssClass="txt-card-name" CausesValidation="true" required></asp:TextBox>
                             </div>
@@ -31,7 +31,7 @@
                                 <asp:DropDownList ID="ddlTheme" runat="server" CssClass="ddl-options" AutoPostBack="true" OnSelectedIndexChanged="ddlTheme_SelectedIndexChanged">
                                     <asp:ListItem Text="Select theme" Value="-1"></asp:ListItem>
                                     <asp:ListItem Text="Professional" Value="0"></asp:ListItem>
-                                    <asp:ListItem Text="Businessman" Value="1"></asp:ListItem>
+                                    <asp:ListItem Text="General" Value="1"></asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                             <div class="content-flex color">
@@ -57,11 +57,13 @@
                             </div>
 
                             <div class="btn-section">
-                                <asp:Button ID="btnSaveCards" runat="server" Text="Save Card" CssClass="btn-save-card" OnClientClick="ffd()"/>
+                                <asp:Button ID="btnSaveCards" runat="server" Text="Save Card" CssClass="btn-save-card" OnClientClick="ffd()" />
                                 <asp:Button ID="btnClearAll" runat="server" Text="Clear All" CssClass="btn-save-card" OnClick="btnClearAll_Click" />
                             </div>
                         </div>
-
+                        <div class="btn-section hidden" id="DeleteContainer" runat="server">
+                            <asp:Button ID="btnDelete" runat="server" Text="Delete Card" CssClass="btn-save-card" OnClick="btnDelete_Click" />
+                        </div>
                     </div>
                     <div class="right-side-display">
                         <div class="card-display">
