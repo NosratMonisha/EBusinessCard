@@ -8,6 +8,7 @@
     <link href="../Images/admin.png" rel="shortcut icon" />
     <link href="../css/font-style.css" rel="stylesheet" />
     <link href="../css/AdminPanel.css" rel="stylesheet" />
+    <link href="../css/listofcard.css" rel="stylesheet" />
     <script src="../scripts/jQuery-3.2.1.js"></script>
     <script src="../scripts/Cards.js"></script>
 
@@ -21,16 +22,25 @@
             var cardBody = document.getElementById("ContentPlaceHolder1_cardBody");
             var cardFooter = document.getElementById("ContentPlaceHolder1_cardFooter");
             var cardName = document.getElementById("ContentPlaceHolder1_txtCardName");
-            
+            var themeName = document.getElementById("ContentPlaceHolder1_ddlTheme");
+            var button = document.getElementById("ContentPlaceHolder1_btnSaveCards");
+
             var actualCardStyle = getComputedStyle(actualCard);
             var cardHolderStyle = getComputedStyle(cardHolder);
             var cardHeadStyle = getComputedStyle(cardHead);
             var workAreaStyle = getComputedStyle(workArea);
             var cardBodyStyle = getComputedStyle(cardBody);
             var cardFooterStyle = getComputedStyle(cardFooter);
+            var themeIndex = $(themeName).prop('selectedIndex');
+            var buttonText = $(button).prop('value');
+
+            var CardID = $('#ContentPlaceHolder1_ddlCardID option:selected').val();
 
             var CssProp = {
+                "ButtonText": buttonText,
+                "CardID" : CardID,
                 "CardsName": cardName.value,
+                "ThemeIndex": themeIndex,
                 "ActualCardBG": actualCardStyle.backgroundColor,
                 "ActualCardTextColor": actualCardStyle.color,
                 "CardsFontFamily": actualCardStyle.fontFamily,

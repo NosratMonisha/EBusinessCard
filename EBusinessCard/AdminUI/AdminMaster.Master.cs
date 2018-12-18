@@ -17,7 +17,8 @@ namespace EBusinessCard.AdminUI
                 if (Session["AdminFullName"] != null)
                 {
                     lblAdminFullName.Text = Session["AdminFullName"].ToString();
-                }else
+                }
+                else
                 {
                     Response.Redirect("~/AdminUI/AdminLogin.aspx");
                 }

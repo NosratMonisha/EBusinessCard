@@ -8,7 +8,10 @@ namespace BusinessAccessLayer
 {
     public class Cards
     {
+        public string ButtonText { get; set; }
+        public string CardID { get; set; }
         public string CardsName { get; set; }
+        public string ThemeIndex { get; set; }
         public string ActualCardBG { get; set; }
         public string ActualCardTextColor { get; set; }
         public string CardsFontFamily { get; set; }

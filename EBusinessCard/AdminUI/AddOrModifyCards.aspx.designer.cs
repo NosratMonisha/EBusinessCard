@@ -58,6 +58,15 @@ namespace EBusinessCard.AdminUI {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl CardProp;
         
         /// <summary>
+        /// nameContainer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nameContainer;
+        
+        /// <summary>
         /// txtCardName control.
         /// </summary>
         /// <remarks>
@@ -110,6 +119,24 @@ namespace EBusinessCard.AdminUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnClearAll;
+        
+        /// <summary>
+        /// DeleteContainer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DeleteContainer;
+        
+        /// <summary>
+        /// btnDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDelete;
         
         /// <summary>
         /// ActualCard control.

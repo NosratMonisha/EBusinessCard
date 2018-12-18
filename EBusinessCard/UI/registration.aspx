@@ -44,6 +44,18 @@
                     </div>
                 </div>
                 <div class="content-input-tabs">
+                    <div class="input-left-tabs">
+                        <label id="usertype-label" for="email">User Type :</label>
+                    </div>
+                    <div class="input-right-tabs">
+                        <asp:DropDownList ID="ddlUserType" runat="server" CssClass="user-type-ddl">
+                            <asp:ListItem Text="Select User Type" Value="-1"></asp:ListItem>
+                            <asp:ListItem Text="General User" Value="0"></asp:ListItem>
+                            <asp:ListItem Text="Companie's Employee" Value="1"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+                <div class="content-input-tabs">
                     <div class="input-left-tabs" id="Dob-label">
                         <label for="number">Date of Birth :</label>
                     </div>
