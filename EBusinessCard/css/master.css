@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-flow: column;
     background-color: #f1f1f1;
+    font-family:Ubuntu;
 }
 
 .container{
@@ -364,4 +365,68 @@ footer a:hover{
 #about ul{
     margin:20px 40px;
     list-style-type:disc;
+}
+
+.child-h1{
+    border-left: 6px solid #585858;
+    padding-left: 20px;
+    color: #585858;
+    font-family: ubuntu;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.actual-card {
+    width: 3.7in;
+    height: 2.2in;
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .cardHolder p {
+    margin: 3px 0;
+}
+
+.cardHolder p{
+    font-size:12px;
+}
+
+.workArea{
+    margin-top:10px;
+    text-align: right;
+}
+
+.cardFooter{
+    text-align:right;
+    margin-top: 20px;
+}
+
+.cardFooter p{
+    margin:0;
+}
+
+.company-full-name{
+    margin:10px 0px;
+    font-size: 18px;
+}
+
+.about-hide{
+    text-align:center;
+    display:none;
+}
+
+.cardHolder{
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.cardHead{
+    display:flex;
+    min-height: 40px;
+    width:100%;
+    text-align:right;
+    justify-content: space-between;
+    box-sizing:border-box;
 }

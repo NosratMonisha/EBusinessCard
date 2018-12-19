@@ -8,6 +8,7 @@
     <link href="../Images/painting-palette.png" rel="shortcut icon" />
     <link href="../css/master.css" rel="stylesheet" />
     <link href="../LocalCDN/font-awesome.css" rel="stylesheet" />
+    <link href="../css/listofcard.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
