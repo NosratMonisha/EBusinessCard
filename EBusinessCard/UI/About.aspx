@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/UI/IndexMaster.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="EBusinessCard.UI.About" %>
+﻿<%@ Page Title="EBCard | About" Language="C#" MasterPageFile="~/UI/IndexMaster.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="EBusinessCard.UI.About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cp1" runat="server">
     <div class="body-content" style="padding-top:120px;">
