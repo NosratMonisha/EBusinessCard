@@ -18,7 +18,8 @@ namespace EBusinessCard.UI
                 if (Request.QueryString["cid"] != null)
                 {
                     LoadCardByID(Request.QueryString["cid"]);
-                }else
+                }
+                else
                 {
                     Server.Transfer("~/Errors_UI/PageNotFoundError.aspx");
                 }
@@ -79,7 +80,7 @@ namespace EBusinessCard.UI
         {
             DataTable dt = (DataTable)Application["CardDetails"];
             string cardID = dt.Rows[0]["CardID"].ToString();
-            Response.Redirect("~/UI/EditCard.aspx");
+            Response.Redirect("~/UI/EditCard.aspx?cid=" + cardID);
         }
     }
 }

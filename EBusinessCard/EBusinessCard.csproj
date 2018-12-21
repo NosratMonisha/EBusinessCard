@@ -167,6 +167,7 @@
     <Content Include="fonts\Ubuntu-Regular.ttf" />
     <Content Include="scripts\Cards.js" />
     <Content Include="scripts\donwload.js" />
+    <Content Include="scripts\EditCard.js" />
     <Content Include="scripts\jQuery-3.2.1.js" />
     <Content Include="UI\About.aspx" />
     <Content Include="UI\CardTemplates.aspx" />
