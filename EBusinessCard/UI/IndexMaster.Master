@@ -9,9 +9,14 @@
     <link href="../css/master.css" rel="stylesheet" />
     <link href="../LocalCDN/font-awesome.css" rel="stylesheet" />
     <link href="../css/listofcard.css" rel="stylesheet" />
+    <script src="../scripts/Cards.js"></script>
+    <script src="../Untracked/jQuery-3.2.1.js"></script>
+    <script src="../Untracked/html2canvas.min.js"></script>
+    <script src="../scripts/donwload.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm1" runat="server"></asp:ScriptManager>
         <div>
             <div id="content-header">
                 <div class="container">
@@ -34,7 +39,7 @@
                 </div>
             </div>
 
-            <asp:ContentPlaceHolder ID="cp1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
             <footer>

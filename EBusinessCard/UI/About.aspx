@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="EBCard | About" Language="C#" MasterPageFile="~/UI/IndexMaster.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="EBusinessCard.UI.About" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="cp1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="body-content" style="padding-top:120px;">
         <div class="container full-height" style="flex-direction: column">
             <div id="about">

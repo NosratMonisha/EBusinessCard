@@ -166,9 +166,12 @@
     <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
     <Content Include="scripts\Cards.js" />
+    <Content Include="scripts\donwload.js" />
     <Content Include="scripts\jQuery-3.2.1.js" />
     <Content Include="UI\About.aspx" />
     <Content Include="UI\CardTemplates.aspx" />
+    <Content Include="UI\CreateCard.aspx" />
+    <Content Include="UI\EditCard.aspx" />
     <Content Include="UI\HomePage.aspx" />
     <Content Include="UI\IndexMaster.Master" />
     <Content Include="fonts\FrederickatheGreat-Regular.ttf" />
@@ -189,12 +192,14 @@
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Redirect.aspx" />
     <Content Include="UI\registration.aspx" />
+    <Content Include="UI\ViewCard.aspx" />
     <Content Include="Untracked\ace.js" />
     <Content Include="Untracked\bootstrap.min.css" />
     <Content Include="Untracked\bootstrap.min.js" />
     <Content Include="Untracked\fontawesome-all.min.css" />
     <Content Include="Untracked\fontawesome-all.min.js" />
     <Content Include="Untracked\github.css" />
+    <Content Include="Untracked\html2canvas.min.js" />
     <Content Include="Untracked\intellicense.js" />
     <Content Include="Untracked\jQuery-3.2.1.js" />
     <Content Include="Untracked\jQuery3.3.1.min.js" />
@@ -262,6 +267,20 @@
     <Compile Include="UI\CardTemplates.aspx.designer.cs">
       <DependentUpon>CardTemplates.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\CreateCard.aspx.cs">
+      <DependentUpon>CreateCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CreateCard.aspx.designer.cs">
+      <DependentUpon>CreateCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EditCard.aspx.cs">
+      <DependentUpon>EditCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EditCard.aspx.designer.cs">
+      <DependentUpon>EditCard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -297,6 +316,13 @@
     </Compile>
     <Compile Include="UI\registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewCard.aspx.cs">
+      <DependentUpon>ViewCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewCard.aspx.designer.cs">
+      <DependentUpon>ViewCard.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

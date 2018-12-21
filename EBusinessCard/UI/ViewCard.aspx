@@ -1,10 +1,9 @@
-﻿<%@ Page Title="EBCard | Sample Cards" Language="C#" MasterPageFile="~/UI/IndexMaster.Master" AutoEventWireup="true" CodeBehind="CardTemplates.aspx.cs" Inherits="EBusinessCard.UI.CardTemplates" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/IndexMaster.Master" AutoEventWireup="true" CodeBehind="ViewCard.aspx.cs" Inherits="EBusinessCard.UI.ViewCard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="body-content" style="padding-top: 70px;">
-        <div class="container" style="flex-direction: column; min-height: 440px;">
+    <div class="body-content" style="padding-top: 120px;">
+        <div class="container full-height" style="flex-direction: column; justify-content: center; align-items: center">
             <div class="childContent">
-                <h1 class="child-h1">Cards Template</h1>
                 <div class="loc-container">
                     <asp:Repeater ID="repeater" runat="server" OnItemDataBound="repeater_ItemDataBound">
                         <ItemTemplate>
@@ -40,15 +39,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="overlay">
-                                    <asp:HiddenField ID="hfCardName" runat="server" Value='<%# Eval("CardID")%>' />
-                                    <a href="ViewCard.aspx?cid=<%#Eval("CardID")%>" target="_blank" class="anchor-btn">View Card</a>
-                                </div>
                             </div>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-
+                <div class="btn-section">
+                    <asp:Button ID="btnEdit" runat="server" Text="Edit Card" CssClass="btn-edit" OnClick="btnEdit_Click" />
+                </div>
             </div>
         </div>
     </div>

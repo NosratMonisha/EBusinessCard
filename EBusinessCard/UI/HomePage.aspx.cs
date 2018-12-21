@@ -9,6 +9,18 @@ namespace EBusinessCard.UI
 {
     public partial class HomePage : System.Web.UI.Page
     {
-        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+        protected void btnEditCardTemplate_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/UI/CardTemplates.aspx");
+        }
+
+        protected void btnCreateCardTemplate_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/UI/CreateCard.aspx");
+        }
     }
 }
