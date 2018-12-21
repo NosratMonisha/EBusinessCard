@@ -12,26 +12,26 @@ namespace EBusinessCard
         protected void Application_Start(object sender, EventArgs e)
         {
         }
-        protected void Application_Error(object sender, EventArgs e)
-        {
-            Exception ex = Server.GetLastError();
+        //protected void Application_Error(object sender, EventArgs e)
+        //{
+        //    Exception ex = Server.GetLastError();
 
-            var exception = (HttpException)ex;
-            int httpCode = exception.GetHttpCode();
+        //    var exception = (HttpException)ex;
+        //    int httpCode = exception.GetHttpCode();
 
-            Server.ClearError();
+        //    Server.ClearError();
 
-            if (!Response.IsRequestBeingRedirected)
-            {
-                if (httpCode == 404)
-                {
-                    Response.Redirect("~/Errors_UI/PageNotFoundError.aspx");
-                }
-                else
-                {
-                    Response.Redirect("~/Errors_UI/Error.aspx");
-                }
-            }
-        }
+        //    if (!Response.IsRequestBeingRedirected)
+        //    {
+        //        if (httpCode == 404)
+        //        {
+        //            Response.Redirect("~/Errors_UI/PageNotFoundError.aspx");
+        //        }
+        //        else
+        //        {
+        //            Response.Redirect("~/Errors_UI/Error.aspx");
+        //        }
+        //    }
+        //}
     }
 }

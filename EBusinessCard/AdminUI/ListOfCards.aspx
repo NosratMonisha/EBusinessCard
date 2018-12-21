@@ -39,10 +39,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="overlay">
+<%--                            <div class="overlay">
                                 <asp:HiddenField ID="hfCardName" runat="server" Value='<%# Eval("CardsName")%>' />
                                 <a href="AddOrModifyCards.aspx?cn=<%#Eval("CardsName")%>" target="_blank" class="anchor-btn">Edit Card</a>
-                            </div>
+                            </div>--%>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
