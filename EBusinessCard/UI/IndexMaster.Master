@@ -10,6 +10,7 @@
     <link href="../LocalCDN/font-awesome.css" rel="stylesheet" />
     <link href="../css/listofcard.css" rel="stylesheet" />
     <script src="../scripts/Cards.js"></script>
+    <script src="../scripts/EditCard.js"></script>
     <script src="../Untracked/jQuery-3.2.1.js"></script>
     <script src="../Untracked/html2canvas.min.js"></script>
     <script src="../scripts/donwload.js"></script>
